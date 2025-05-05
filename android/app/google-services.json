@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688773602853",
+    "project_id": "top-ai-24",
+    "storage_bucket": "top-ai-24.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688773602853:android:9b9bd39d7f295e4775a9cc",
+        "android_client_info": {
+          "package_name": "com.example.top_ai_24"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6EPBRDIQwv0essIR_gN0jzAm1invceds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
