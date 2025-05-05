@@ -8,14 +8,13 @@ A **Flutter application** that lets users securely log in, manage their personal
 
 ### 🔐 Authentication  
 - ✅ **Google Sign-In** (secure and quick)  
-- 📱 **Phone Number Login** *(optional bonus feature)*  
 - 🧾 Automatically creates a user in **Firebase** on first login
 
 ### 👤 Profile Management  
 - 📧 View user email and basic info (from Google)  
 - 📝 Edit and save personal details:
-  - 🏠 Address (with validation)  
-  - 📞 Phone number (validated)  
+  - 🏠 Address  
+  - 📞 Phone number
   - 🎂 Age (dropdown selector)  
   - 💬 Custom notes
 
@@ -25,6 +24,19 @@ A **Flutter application** that lets users securely log in, manage their personal
 - 🏠 Clean Home Screen with profile editing  
 - 📂 Navigation drawer or menu to access other screens  
 - ⚙️ Account settings and options
+- ## 🖼️ App in Action
+
+A quick glimpse at the app interface:
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1SvlRpcoTHcOXW525n0OPPvp9YmputUvw" width="200" />
+  <img src="https://drive.google.com/uc?id=1i4YULwmnq7xriFJ1u_j9U4_l6SiAjd7F" width="200" />
+  <img src="https://drive.google.com/uc?id=1pG9im29EfhnVqH1w7bsPxXOWK1EP5eGj" width="200" />
+</p>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1yKLMGCi29tmPmgZWXyDuRV4bFic20wUs" width="200" />
+  <img src="https://drive.google.com/uc?id=1mQYVbN2bS88FfIaCaK6UJnTaaxOnzotA" width="200" />
+  <img src="https://drive.google.com/uc?id=1aMzHRFfU-gUrwTcfuWfjXHhctgP87U1r" width="200" />
+</p>
 
 ### 🔐 Account Controls  
 - 🔓 **Logout** securely  
@@ -48,15 +60,6 @@ A **Flutter application** that lets users securely log in, manage their personal
 
 ---
 
-## 🧰 Setup Instructions
-
-### ✅ Prerequisites  
-Make sure you have the following installed:
-- Flutter SDK (latest stable)
-- Dart SDK
-- Firebase project setup
-- Supabase project setup
-
 ### 📥 Installation
 
 ```bash
@@ -65,33 +68,4 @@ cd user-profile-app
 flutter pub get
 ```
 
-### 🔧 Configuration
 
-1. **Firebase**:
-   - Enable Google Sign-In and Phone Authentication
-   - Download `google-services.json` and place it in `android/app/`
-
-2. **Supabase**:
-   - Create a table `user_details` with fields like `user_id`, `address`, `phone`, `age`, `notes`
-   - Set up row-level security (RLS) using policies like:
-     ```sql
-     user_id = auth.uid()
-     ```
-
-3. **Environment Setup**:
-   Add your keys in `lib/secrets.dart` or use `.env` via `flutter_dotenv`.
-
----
-
-## 🚀 Run the App
-
-```bash
-flutter run
-```
-
----
-
-## 🙌 Contributions & Feedback
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.  
-Have feedback? Drop a star ⭐ and suggest ideas!
